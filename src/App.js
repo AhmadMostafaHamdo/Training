@@ -1,5 +1,5 @@
 import { HashRouter,Route, Routes } from 'react-router-dom';
-import Init from './pages/website/Init'clear
+import Init from './pages/website/Init'
 
 export default function App() {
   return (
