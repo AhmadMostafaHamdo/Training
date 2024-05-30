@@ -26,7 +26,7 @@ export default function Init() {
         if(window.localStorage.getItem('btnAuth') === "تسجيل الخروج") {
             window.location.pathname = '/logout'
         } else {
-            window.location.pathname = '/login'
+            window.location.pathname = 'Training/login'
         }
     }
    
@@ -36,7 +36,8 @@ export default function Init() {
                 <div className='header-auth'>
                     <ul>
                         <li><Link to="" className='start' >ابدأ</Link></li>
-                        <li><Link className='enter' onClick={logout} ref={btnAuth}> {window.localStorage.getItem('btnAuth')}</Link></li>
+                        <li><Link to={"/Training/login"} className='enter'  ref={btnAuth}>تسجيل الدخول</Link></li>
+                        {/* <li><Link className='enter' onClick={logout} ref={btnAuth}> {window.localStorage.getItem('btnAuth')}</Link></li> */}
                     </ul>
                 </div>
                 <div className='header-content'>
