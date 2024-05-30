@@ -1,9 +1,14 @@
-
+import { HashRouter,Route, Routes } from 'react-router-dom';
+import Init from './pages/website/Init'clear
 
 export default function App() {
   return (
    <div>
-      <h1>Hello I am Ahmad Hamdo</h1>
+       <HashRouter>
+           <Routes>
+                <Route path="/" element={<Init/>} />
+           </Routes>
+       </HashRouter>
    </div>
   );
 }
