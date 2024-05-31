@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Training/static/css/main.a08fe3d1.css",
-    "main.js": "/Training/static/js/main.7b9e24a3.js",
+    "main.css": "/Training/static/css/main.6329e823.css",
+    "main.js": "/Training/static/js/main.ac660f7b.js",
     "static/js/453.ed3810f9.chunk.js": "/Training/static/js/453.ed3810f9.chunk.js",
     "static/media/Rectangle 82.svg": "/Training/static/media/Rectangle 82.c716c7458ec647d718db.svg",
     "static/media/amazing-aerial-shot-singapore-cityscape-with-lots-skyscrapers (1).png": "/Training/static/media/amazing-aerial-shot-singapore-cityscape-with-lots-skyscrapers (1).c13d1a92ec792ae556e4.png",
     "static/media/analog-landscape-city-with-buildings.png": "/Training/static/media/analog-landscape-city-with-buildings.007237e197e0bed88283.png",
     "index.html": "/Training/index.html",
-    "main.a08fe3d1.css.map": "/Training/static/css/main.a08fe3d1.css.map",
-    "main.7b9e24a3.js.map": "/Training/static/js/main.7b9e24a3.js.map",
+    "main.6329e823.css.map": "/Training/static/css/main.6329e823.css.map",
+    "main.ac660f7b.js.map": "/Training/static/js/main.ac660f7b.js.map",
     "453.ed3810f9.chunk.js.map": "/Training/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a08fe3d1.css",
-    "static/js/main.7b9e24a3.js"
+    "static/css/main.6329e823.css",
+    "static/js/main.ac660f7b.js"
   ]
 }
