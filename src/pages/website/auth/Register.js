@@ -47,10 +47,10 @@ export default function Register() {
                             </div>
                         </div>
                         <button onClick={
-                            ()=>window.location.pathname = '/verfiy'
+                            ()=>window.location.pathname = '/Training/verfiy'
                         }>إنشاء حساب</button>
                         <p className='log'>لديك حساب ؟ <Link onClick={
-                            () => window.location.pathname = './login'
+                            () => window.location.pathname = './Training/login'
                             }>تسجيل دخول</Link></p>
                     </div>
                 </div>

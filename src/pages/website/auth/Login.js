@@ -1,20 +1,22 @@
 import { Link } from 'react-router-dom'
 import '../../../styles/login.css'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 
 export default function Login() {
+    const login = useRef();
     const [form, setForm] = useState({
         email : "",
         password: ""
     }) 
-    const [btnAuth, setBtnAut] = useState("تسجيل الدخول");
     function handelChange(e) {
         setForm({...form,[e.target.name]:e.target.value})
     }
     function handelForm() {
-        window.localStorage.setItem('btnAuth',"تسجيل الخروج");
-        window.location.pathname = '/';
-        
+            login.current.addEventListener('click', function () {
+            localStorage.setItem('auth',"تسجيل الخروج");
+            window.location.href = '/Training';
+        }
+        )
     }
     return <div className='opacity'>
         <div className="login">
@@ -29,15 +31,14 @@ export default function Login() {
                 <label htmlFor='pass' className='pass'>كلمة المرور</label>
                 <input type='password' id='pass' name='password' form={form.password} onChange={handelChange}/>
             </div>
-            <Link to="/"> <button onClick={handelForm} >تسجيل الدخول</button> </Link>
+            <Link to=""> <button onClick={handelForm} ref={login}>تسجيل الدخول</button> </Link>
         
         <div className='section-acount'>
             <Link to="" href='#'>نسيت كلمة المرور</Link>
             <div >
                 <span  >ليس لديك حساب ؟</span>
-                <Link onClick={
-                    ()=>window.location.pathname = '/register'
-                    } className='pass'>إنشاء حساب</Link>
+                <Link to="/Training/register" 
+                className='pass'>إنشاء حساب</Link>
             </div>
         </div>
         <div className='social-login'>
