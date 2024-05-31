@@ -31,7 +31,7 @@ export default function Init() {
         }
     )
     function logout () { 
-        if(btnAuth.current.textContent == "تسجيل الخروج") {
+        if(btnAuth.current.textContent === "تسجيل الخروج") {
             window.location.pathname = 'Training/logout'
         } else {
             window.location.pathname = 'Training/login'

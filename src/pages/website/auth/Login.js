@@ -12,9 +12,9 @@ export default function Login() {
         setForm({...form,[e.target.name]:e.target.value})
     }
     function handelForm() {
-            login.current.addEventListener('click', function () {
+        login.current.addEventListener('click', function () {
+                window.location.href = '/Training';
             localStorage.setItem('auth',"تسجيل الخروج");
-            window.location.href = '/Training';
         }
         )
     }
